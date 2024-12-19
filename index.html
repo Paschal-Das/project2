@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Application Form</h1>
+        <form id="applicationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+
+        <div id="output" class="output hidden">
+            <h2>Submitted Information</h2>
+            <p><strong>Full Name:</strong> <span id="outputName"></span></p>
+            <p><strong>Email Address:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Phone Number:</strong> <span id="outputPhone"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="outputDOB"></span></p>
+            <p><strong>Address:</strong> <span id="outputAddress"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
